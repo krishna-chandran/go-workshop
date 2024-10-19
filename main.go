@@ -80,6 +80,13 @@ func main() {
 	p := Person{ name: "Krishna", age: 30, height: 5.10, place: "Erode" }
 	fmt.Println(p.name, p.age, p.height, p.place)
 
+	q := new(Person)
+	q.name = "Kumar"
+	q.age = 25
+	q.height = 5.11
+	q.place = "Chennai"
+	fmt.Println(q.name, q.age, q.height, q.place)
+
  
 
 }
