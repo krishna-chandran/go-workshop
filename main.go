@@ -22,5 +22,16 @@ func main() {
 		fmt.Println("You have scored less than a century")
 	}
 
+	// i is only available inside the for loop
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+
+	i := 10
+	for i < 15 {
+		fmt.Println(i)
+		i++
+	}
+
 
 }
