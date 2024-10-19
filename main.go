@@ -46,4 +46,27 @@ func main() {
 		fmt.Println(index, value)
 	}
 
+	// Variable declaration with data type says how much memory to allocate for the variable
+	// For int64, 8 bytes of memory is allocated
+	// For int32, 4 bytes of memory is allocated
+	var x int64 = 10
+	var y int64 = 20
+	fmt.Println("Sum of the numbers is", add(x, y))
+	fmt.Println("The value of x is", x)
+
+	// Pointers 
+	// xp can store address of int64 type variable
+	// &y is the address of y
+	var xp *int64
+	xp = &x 
+	fmt.Println("The value of xp is", xp)
+	xp = &y 
+	fmt.Println("The value of xp is", xp)
+
+}
+
+// Pass by value
+func add(x int64, y int64) int64  {
+	x = x + 10
+	return x + y
 }
